@@ -1,5 +1,5 @@
 exports.createPost = (req, res) => {
-    res.send(`NOT IMPLEMENTED:create post :${req.params.postId}`);
+    res.send(`NOT IMPLEMENTED:create post`);
 }
 
 exports.getPosts = (req, res) => {

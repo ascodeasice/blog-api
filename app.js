@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const compression = require("compression");
 const helmet = require("helmet");
+const cors = require("cors");
 
 require("dotenv").config();
 
@@ -34,6 +35,7 @@ async function main() {
   await mongoose.connect(mongoDB);
 }
 
+app.use(cors()); // enable all cors request
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler

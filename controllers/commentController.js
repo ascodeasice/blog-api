@@ -1,5 +1,5 @@
-exports.createCommentGet = (req, res) => {
-    res.send(`NOT IMPLEMENTED:create comment :${req.params.commentId}`);
+exports.createComment = (req, res) => {
+    res.send(`NOT IMPLEMENTED:create comment :${req.params.postId}`);
 }
 
 exports.getComments = (req, res) => {

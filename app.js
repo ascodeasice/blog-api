@@ -6,6 +6,7 @@ var logger = require('morgan');
 const compression = require("compression");
 const helmet = require("helmet");
 const cors = require("cors");
+const passport = require("passport");
 
 require("dotenv").config();
 
@@ -34,6 +35,7 @@ main().catch(err => console.log(err));
 async function main() {
   await mongoose.connect(mongoDB);
 }
+
 
 app.use(cors()); // enable all cors request
 app.use('/', indexRouter);

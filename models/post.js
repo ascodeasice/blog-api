@@ -6,7 +6,7 @@ const PostSchema = new Schema(
         title: { type: String, requried: true },
         text: { type: String, required: true },
         author: { type: Schema.Types.ObjectId, ref: "User", required: true },
-        commments: [{ type: Schema.Types.ObjectId, ref: "Comment", requried: true }],
+        comments: [{ type: Schema.Types.ObjectId, ref: "Comment", requried: true }],
         isPublic: { type: Boolean, required: true },
     },
     {

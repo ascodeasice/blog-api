@@ -46,6 +46,7 @@ exports.createPost = [
 
 exports.getPosts = (req, res, next) => {
     Post.find({})
+        .populate("author")
         .exec((err, posts) => {
             if (err) {
                 res.json(err);
@@ -57,6 +58,7 @@ exports.getPosts = (req, res, next) => {
 
 exports.getPost = (req, res) => {
     Post.findById(req.params.postId)
+        .populate("author")
         .exec((err, post) => {
             if (err) {
                 res.json(err);

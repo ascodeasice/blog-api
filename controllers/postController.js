@@ -81,7 +81,7 @@ exports.updatePost = [
         jwt.verify(req.token, process.env.JWT_SECRET, (err, authData) => {
             if (err) {
                 res.sendStatus(403);
-                return next();
+                return;
             }
         });
 
@@ -110,7 +110,6 @@ exports.updatePost = [
 ]
 
 exports.deletePost = (req, res, next) => {
-
     async.parallel(
         {
             post(callback) {
@@ -161,6 +160,4 @@ exports.deletePost = (req, res, next) => {
                 res.json(results.post);
             })
         })
-
-
 }

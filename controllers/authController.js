@@ -3,7 +3,7 @@ const User = require("../models/user");
 const { body, validationResult } = require("express-validator");
 
 exports.signUp = (req, res) => {
-    res.send(`NOT IMPLEMENTED: sign up`);
+    res.send("You cannot sign up, this is the blog of ascodeasice, owner of this api.");
 }
 
 exports.logIn = [

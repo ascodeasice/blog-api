@@ -35,19 +35,17 @@ router.get("/posts/:postId/comments", commentController.getComments);
 
 router.get("/posts/:postId/comments/:commentId", commentController.getComment);
 
-router.put("/posts/:postId/comments/:commentId", commentController.updateComment);
+router.delete("/posts/:postId/comments/:commentId", verifyToken, commentController.deleteComment);
 
-router.delete("/posts/:postId/comments/:commentId", commentController.deleteComment);
-
-router.post("/posts", postController.createPost);
+router.post("/posts", verifyToken, postController.createPost);
 
 router.get("/posts", postController.getPosts);
 
 router.get("/posts/:postId", postController.getPost);
 
-router.put("/posts/:postId", postController.updatePost);
+router.put("/posts/:postId", verifyToken, postController.updatePost);
 
-router.delete("/posts/:postId", postController.deletePost);
+router.delete("/posts/:postId", verifyToken, postController.deletePost);
 
 router.get("/users/:userId", userController.getUser);
 

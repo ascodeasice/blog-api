@@ -10,9 +10,9 @@ There are two frontends:
 - Use Express.js framework
 # Link
 ## Viewer
-[Live Preview](#)
+[Live Preview](https://ascodeasice.github.io/blog-viewer/)
 
-[Github repo](#)
+[Github repo](https://github.com/ascodeasice/blog-viewer)
 ## Writer
 [Live Preview](#)
 

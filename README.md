@@ -14,8 +14,8 @@ There are two frontends:
 
 [Github repo](https://github.com/ascodeasice/blog-viewer)
 ## Writer
-[Live Preview](#)
+[Live Preview](https://ascodeasice.github.io/blog-writer/)
 
-[Github repo](#)
+[Github repo](https://github.com/ascodeasice/blog-writer)
 
 NOTE: deploying on railway app has a time limit, so the live preview link might not work. (Starter plan)
